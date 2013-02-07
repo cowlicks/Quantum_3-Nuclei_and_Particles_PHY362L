@@ -1,0 +1,18 @@
+for calcium with:
+    m_c = 40 * u
+    z_c = 20
+Broglie Wavelength   = 3.759779e-15
+momentum transfer q  = 5.752279e+07
+theta cm             = 10.00014
+mott cross section   = 3.284643e-29
+formfactor squared   = 1.345626e-94
+recoil               = 0.9998657
+for hydrogen with:
+    m_c = 1 * u
+    z_c = 1
+Broglie Wavelength   = 3.761789e-15
+momentum transfer q  = 5.752279e+07
+theta cm             = 10.0055
+mott cross section   = 8.168813e-32
+formfactor squared   = 1.345626e-94
+recoil               = 0.9946549
