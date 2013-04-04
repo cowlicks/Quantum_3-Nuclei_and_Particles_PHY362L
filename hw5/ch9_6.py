@@ -9,5 +9,3 @@ Ek_l    = math.sqrt(mk**2 + pk_l**2)
 Ep_l    = mp
 # invariant
 M       = math.sqrt((Ek_l + Ep_l)**2 - pk_l**2)
-
-
