@@ -24,7 +24,7 @@
 * gravitons
 
 ## Relevant relativistic equations.
-    * 4 vectors
+* 4 vectors
 
 ## other equations:
 * width is hbar times gamma (decayrate)
