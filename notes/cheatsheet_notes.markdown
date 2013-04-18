@@ -34,3 +34,7 @@
 ## constants and units
 * hbar * c and h * c values and units.
     * 197 MeV*fm and 1240 eV*nm 
+* even and oddness (symmetry and asymmetry)
+    * spin and isospin symmetry
+        * Top and bottom even, alternates odd even between them.
+    * space wavefunction symmetry l=0,2,4,...
