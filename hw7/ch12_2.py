@@ -3,17 +3,29 @@ mp = 938.272
 me = 0.511
 mn = 939.565
 msig = 1189.
+msigm = 1197.
+msigo = 1193.
 mlam = 1115.
-en = mn - (mp + me)
+taun = 881.5
+taulam = 2.63e-10
+tausig = 0.8e-10
+tausigm = 1.48e-10
+tausigo = 7.4e-20
+hbar = 6.582e-22
 
-def bdecay(e, m=me):
-    val = (1./3)*(m*m + e*e)*(e*e - m*m)**(3./2) 
-    val2 =  (-.25*e*e*(e*e - m*m)**.5)*(2*e*e - m*m) 
-    val3 = (.25*e*m**4 * math.log(e + (e*e - m*m)**.5)) 
-    val4 = (1./5)*(e*e - m*m)**(5./2) + .25*e*m**4 * math.log(m)
-    print val, val2, val3, val4
-    return val + val2 + val3 + val4
+def bwidth(E0, N):
+    h = math.sqrt(E0**2 - me**2)/N
+    integral = 0
 
+    def f(p,E0):
+        E = math.sqrt(me**2 + p**2)
+        return p*p*(E - E0)**2
+
+    for i in range(N+1):
+        integral += h*f(i*h, E0)
+
+    return integral
+        
 mD = 1865
 mK = 494
 mpi = 139.6
